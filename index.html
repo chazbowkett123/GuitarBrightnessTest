@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guitar Brightness Listening Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="instructions.html" class="back-button">← Back to Instructions</a>
+  <div class="progress">Set 1 of 8</div>
+  
+  <div id="set1" class="test-set active">
+    <h1>Chord A - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(1)">Next Set</button>
+  </div>
+
+  <div id="set2" class="test-set">
+    <h1>Chord A Minor - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(2)">Next Set</button>
+  </div>
+
+  <div id="set3" class="test-set">
+    <h1>Chord C - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(3)">Next Set</button>
+  </div>
+
+  <div id="set4" class="test-set">
+    <h1>Chord D - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(4)">Next Set</button>
+  </div>
+
+  <div id="set5" class="test-set">
+    <h1>Chord D Minor - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(5)">Next Set</button>
+  </div>
+
+  <div id="set6" class="test-set">
+    <h1>Chord E - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(6)">Next Set</button>
+  </div>
+
+  <div id="set7" class="test-set">
+    <h1>Chord E Minor - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitSet(7)">Next Set</button>
+  </div>
+
+  <div id="set8" class="test-set">
+    <h1>Chord G - Rank by Brightness</h1>
+    <p>Listen to each clip and rank them from dullest (1) to brightest (4).</p>
+    <div class="sample-group">
+      <div class="sample" draggable="true" data-index="1">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">1</div>
+        <p>Sample 1:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="2">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">2</div>
+        <p>Sample 2:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="3">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">3</div>
+        <p>Sample 3:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+      <div class="sample" draggable="true" data-index="4">
+        <div class="drag-handle">⋮⋮</div>
+        <div class="rank-number">4</div>
+        <p>Sample 4:</p>
+        <audio controls src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"></audio>
+      </div>
+    </div>
+    <button onclick="submitFinal()">Submit All Rankings</button>
+    <span class="submit-warning">Please wait a few seconds after submitting while data is recorded. Do not leave the page.</span>
+  </div>
+
+  <div id="loadingMessage" class="loading-modal">
+    <div class="modal-content">
+      <div class="loading-spinner"></div>
+      <p>Please wait while your results are being recorded...</p>
+    </div>
+  </div>
+
+  <script src="google-sheets-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
