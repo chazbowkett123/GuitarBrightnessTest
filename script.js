@@ -36,6 +36,7 @@ function submitSet(setNumber) {
 }
 
 async function submitFinal() {
+  alert("You will be redirected to a thank you page after pressing OK. Please wait 10-15 seconds while your results are being submitted"); 
   try {
     // Submit the last set's rankings
     submitSet(8);
