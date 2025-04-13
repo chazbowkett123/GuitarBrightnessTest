@@ -74,6 +74,10 @@ async function submitFinal() {
 }
 
 function startTest() {
+  const progress = document.querySelector('.progress');
+  if (progress) {
+    progress.style.display = 'block';
+  }
   document.getElementById('instructions').classList.remove('active');
   document.getElementById('set1').classList.add('active');
   document.querySelector('.progress').textContent = 'Set 1 of 8';
@@ -81,11 +85,24 @@ function startTest() {
 
 // Initialize drag and drop functionality
 document.addEventListener('DOMContentLoaded', () => {
-  // Hide all sets initially
-  document.querySelectorAll('.set').forEach(set => set.classList.remove('active'));
-  // Show instructions first
-  document.getElementById('instructions').classList.add('active');
+  // First, hide ALL content including sets and instructions
+  document.querySelectorAll('.set, #instructions').forEach(element => {
+    element.classList.remove('active');
+  });
 
+  // Then explicitly show instructions
+  const instructions = document.getElementById('instructions');
+  if (instructions) {
+    instructions.classList.add('active');
+  }
+
+  // Hide progress indicator initially
+  const progress = document.querySelector('.progress');
+  if (progress) {
+    progress.style.display = 'none';
+  }
+
+  // Initialize drag and drop
   const samples = document.querySelectorAll('.sample');
   samples.forEach(sample => {
     sample.addEventListener('dragstart', handleDragStart);
