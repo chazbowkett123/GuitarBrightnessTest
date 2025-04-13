@@ -73,8 +73,19 @@ async function submitFinal() {
   }
 }
 
+function startTest() {
+  document.getElementById('instructions').classList.remove('active');
+  document.getElementById('set1').classList.add('active');
+  document.querySelector('.progress').textContent = 'Set 1 of 8';
+}
+
 // Initialize drag and drop functionality
 document.addEventListener('DOMContentLoaded', () => {
+  // Hide all sets initially
+  document.querySelectorAll('.set').forEach(set => set.classList.remove('active'));
+  // Show instructions first
+  document.getElementById('instructions').classList.add('active');
+
   const samples = document.querySelectorAll('.sample');
   samples.forEach(sample => {
     sample.addEventListener('dragstart', handleDragStart);
