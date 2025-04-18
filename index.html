@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guitar Brightness Listening Test</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .play-button {
-      padding: 8px 16px;
+      padding: 12px 24px;
+      font-size: 1.1em;
       cursor: pointer;
       background: #4CAF50;
       border: none;
       color: white;
       border-radius: 4px;
+      margin-bottom: 20px; /* Add space between button and slider */
     }
     .brightness-slider {
       width: 100%;
@@ -71,7 +74,8 @@
       display: flex;
       align-items: center;
       gap: 15px; /* Increased from 8px */
-      width: 500px;
+      width: 100%;
+      max-width: 500px;
       padding: 10px 0; /* Added padding */
     }
     .loading-overlay {
@@ -103,6 +107,81 @@
       margin-top: 20px;
       font-size: 18px;
       color: #333;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .sample p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    button[onclick*="submit"] {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 200px;
+      transition: background-color 0.3s;
+    }
+
+    button[onclick*="submit"]:hover {
+      background: #1976D2;
+    }
+
+    @media (max-width: 480px) {
+      .play-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .brightness-slider {
+        height: 50px;
+      }
+
+      .brightness-slider::-webkit-slider-thumb {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brightness-slider::-moz-range-thumb {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brightness-value {
+        font-size: 1.2em;
+      }
+
+      .sample {
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .slider-labels {
+        font-size: 1.1em;
+      }
+
+      button[onclick*="submit"] {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3em;
+        margin-top: 30px;
+      }
     }
   </style>
 </head>
@@ -678,7 +757,7 @@
         <div class="sample">
           <p>Sequence 1:</p>
           <button class="play-button">Play</button>
-          <audio src="sequence/Guitar_AJ_Sequence_0.mp3"></audio>
+          <audio src="-14_LUFS/Guitar_AJ_Sequence_0.mp3"></audio>
           <div class="brightness-control">
             <div class="slider-container">
               <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
@@ -693,7 +772,7 @@
         <div class="sample">
           <p>Sequence 2:</p>
           <button class="play-button">Play</button>
-          <audio src="sequence/Guitar_J35_Sequence_0.mp3"></audio>
+          <audio src="-14_LUFS/Guitar_J35_Sequence_0.mp3"></audio>
           <div class="brightness-control">
             <div class="slider-container">
               <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
@@ -708,7 +787,7 @@
         <div class="sample">
           <p>Sequence 3:</p>
           <button class="play-button">Play</button>
-          <audio src="sequence/Guitar_J50_Sequence_0.mp3"></audio>
+          <audio src="-14_LUFS/Guitar_J50_Sequence_0.mp3"></audio>
           <div class="brightness-control">
             <div class="slider-container">
               <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
@@ -723,7 +802,7 @@
         <div class="sample">
           <p>Sequence 4:</p>
           <button class="play-button">Play</button>
-          <audio src="sequence/Guitar_OMC_Sequence_0.mp3"></audio>
+          <audio src="-14_LUFS/Guitar_OMC_Sequence_0.mp3"></audio>
           <div class="brightness-control">
             <div class="slider-container">
               <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
