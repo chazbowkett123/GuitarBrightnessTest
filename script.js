@@ -17,7 +17,15 @@ const chordMap = {
   9: 'Sequence'
 };
 
+function stopAllAudio() {
+  document.querySelectorAll('audio').forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+}
+
 function submitSet(setNumber) {
+  stopAllAudio();
   const currentSet = document.getElementById(`set${setNumber}`);
   const sliders = currentSet.querySelectorAll('.brightness-slider');
   const rankings = Array.from(sliders).map(slider => ({
@@ -37,6 +45,7 @@ function submitSet(setNumber) {
 }
 
 async function submitFinal() {
+  stopAllAudio();
   const loadingOverlay = document.querySelector('.loading-overlay');
   loadingOverlay.style.display = 'flex';
   
