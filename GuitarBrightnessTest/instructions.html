@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Brightness Test Instructions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .instructions {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .start-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 480px) {
+            .instructions {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            li {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .start-button {
+                padding: 12px 25px;
+                width: 100%;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Guitar Brightness Listening Test</h1>
+        <h2>Instructions</h2>
+        <ul>
+            <li>You will hear four different guitar recordings of the same chord per page, and then a chord sequence played on 4 different guitars on the last page</li>
+            <li>Listen carefully to each sample</li>
+            <li>Arrange the samples from brightest (100) to least bright (0)</li>
+            <li>You can listen to the samples as many times as needed</li>
+            <li>It is recommended to wear headphones whilst carrying out these tests</li>
+        </ul>
+        <a href="index.html" class="start-button">Start Test</a>
+    </div>
+    <div id="waitingMessage" class="waiting-message hidden">
+        <p>Submitting your responses...</p>
+    </div>
+</body>
+</html>

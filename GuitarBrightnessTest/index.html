@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Brightness Listening Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .play-button {
+      padding: 12px 24px;
+      font-size: 1.1em;
+      cursor: pointer;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 20px; /* Add space between button and slider */
+    }
+    .brightness-slider {
+      width: 100%;
+      height: 40px; /* Increased from 30px */
+      margin: 15px 0; /* Increased from 10px */
+      -webkit-appearance: none;
+      appearance: none;
+      background: #ddd;
+      border-radius: 20px;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity .2s;
+      touch-action: none; /* Prevents page scroll while sliding */
+    }
+
+    /* Larger touch target for the slider thumb */
+    .brightness-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 35px;
+      height: 35px;
+      background: #4CAF50;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .brightness-slider::-moz-range-thumb {
+      width: 35px;
+      height: 35px;
+      background: #4CAF50;
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+    }
+
+    .brightness-value {
+      display: inline-block;
+      margin-left: 8px;
+    }
+    .brightness-control {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 100%;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      color: #666;
+      width: 100%;
+      padding: 0 50px; /* Increased from 10px to 50px to move labels inward */
+      margin-top: 4px; /* Add spacing between slider and labels */
+    }
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 15px; /* Increased from 8px */
+      width: 100%;
+      max-width: 500px;
+      padding: 10px 0; /* Added padding */
+    }
+    .loading-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .loading-spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .loading-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .sample p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    button[onclick*="submit"] {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 200px;
+      transition: background-color 0.3s;
+    }
+
+    button[onclick*="submit"]:hover {
+      background: #1976D2;
+    }
+
+    @media (max-width: 480px) {
+      .play-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .brightness-slider {
+        height: 50px;
+      }
+
+      .brightness-slider::-webkit-slider-thumb {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brightness-slider::-moz-range-thumb {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brightness-value {
+        font-size: 1.2em;
+      }
+
+      .sample {
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .slider-labels {
+        font-size: 1.1em;
+      }
+
+      button[onclick*="submit"] {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3em;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="instructions.html" class="back-button">← Back to Instructions</a>
+  <div class="progress">Set 1 of 5</div>
+  
+  <!-- Set 1: Chord A -->
+  <div id="set1" class="test-set active">
+    <h1>Chord A - Rate Brightness</h1>
+    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
+    <div class="sample-group">
+      <div class="samples-container" id="a-samples">
+        <!-- Samples will be inserted here by script.js -->
+      </div>
+    </div>
+    <button onclick="submitSet(1)">Next Set</button>
+  </div>
+
+  <!-- Set 2: Chord C -->
+  <div id="set2" class="test-set">
+    <h1>Chord C - Rate Brightness</h1>
+    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
+    <div class="sample-group">
+      <div class="samples-container" id="c-samples">
+        <!-- Samples will be inserted here by script.js -->
+      </div>
+    </div>
+    <button onclick="submitSet(2)">Next Set</button>
+  </div>
+
+  <!-- Set 3: Chord D -->
+  <div id="set3" class="test-set">
+    <h1>Chord D - Rate Brightness</h1>
+    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
+    <div class="sample-group">
+      <div class="samples-container" id="d-samples">
+        <!-- Samples will be inserted here by script.js -->
+      </div>
+    </div>
+    <button onclick="submitSet(3)">Next Set</button>
+  </div>
+
+  <!-- Set 4: Chord E -->
+  <div id="set4" class="test-set">
+    <h1>Chord E - Rate Brightness</h1>
+    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
+    <div class="sample-group">
+      <div class="samples-container" id="e-samples">
+        <!-- Samples will be inserted here by script.js -->
+      </div>
+    </div>
+    <button onclick="submitSet(4)">Next Set</button>
+  </div>
+
+  <!-- Set 5: Chord G -->
+  <div id="set5" class="test-set">
+    <h1>Chord G - Rate Brightness</h1>
+    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
+    <div class="sample-group">
+      <div class="samples-container" id="g-samples">
+        <!-- Samples will be inserted here by script.js -->
+      </div>
+    </div>
+    <button onclick="submitFinal()">Submit All Rankings</button>
+  </div>
+
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Submitting your responses...</div>
+  </div>
+  <script src="google-sheets-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
