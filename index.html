@@ -187,633 +187,63 @@
 </head>
 <body>
   <a href="instructions.html" class="back-button">← Back to Instructions</a>
-  <div class="progress">Set 1 of 9</div>
+  <div class="progress">Set 1 of 5</div>
   
+  <!-- Set 1: Chord A -->
   <div id="set1" class="test-set active">
     <h1>Chord A - Rate Brightness</h1>
     <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
     <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Bridge_Fingers_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Bridge_Pick_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Neck_Fingers_Intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Neck_Pick_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
+      <div class="samples-container" id="a-samples">
+        <!-- Samples will be inserted here by script.js -->
       </div>
     </div>
     <button onclick="submitSet(1)">Next Set</button>
   </div>
 
+  <!-- Set 2: Chord C -->
   <div id="set2" class="test-set">
-    <h1>Chord A Minor - Rate Brightness</h1>
+    <h1>Chord C - Rate Brightness</h1>
     <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
     <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Minor_Bridge_Fingers_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Minor_Bridge_Pick_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Minor_Neck_Fingers_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/A_Minor_Neck_Pick_Intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
+      <div class="samples-container" id="c-samples">
+        <!-- Samples will be inserted here by script.js -->
       </div>
     </div>
     <button onclick="submitSet(2)">Next Set</button>
   </div>
 
+  <!-- Set 3: Chord D -->
   <div id="set3" class="test-set">
-    <h1>Chord C - Rate Brightness</h1>
+    <h1>Chord D - Rate Brightness</h1>
     <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
     <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/C_Bridge_Fingers_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/C_Bridge_Pick_Intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/C_Neck_Fingers_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/C_Neck_Pick_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
+      <div class="samples-container" id="d-samples">
+        <!-- Samples will be inserted here by script.js -->
       </div>
     </div>
     <button onclick="submitSet(3)">Next Set</button>
   </div>
 
+  <!-- Set 4: Chord E -->
   <div id="set4" class="test-set">
-    <h1>Chord D - Rate Brightness</h1>
+    <h1>Chord E - Rate Brightness</h1>
     <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
     <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Bridge_Fingers_Intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Bridge_Pick_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Neck_Fingers_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Neck_Pick_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
+      <div class="samples-container" id="e-samples">
+        <!-- Samples will be inserted here by script.js -->
       </div>
     </div>
     <button onclick="submitSet(4)">Next Set</button>
   </div>
 
+  <!-- Set 5: Chord G -->
   <div id="set5" class="test-set">
-    <h1>Chord D Minor - Rate Brightness</h1>
-    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
-    <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Minor_bridge_fingers_medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Minor_bridge_pick_intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_Minor_neck_Fingers_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/D_minor_neck_Pick_medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="submitSet(5)">Next Set</button>
-  </div>
-
-  <div id="set6" class="test-set">
-    <h1>Chord E - Rate Brightness</h1>
-    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
-    <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Bridge_Fingers_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Bridge_Pick_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Neck_Fingers_Medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_NEck_Pick_Intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="submitSet(6)">Next Set</button>
-  </div>
-
-  <div id="set7" class="test-set">
-    <h1>Chord E Minor - Rate Brightness</h1>
-    <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
-    <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Minor_Bridge_Fingers_intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Minor_Bridge_Pick_medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Minor_Neck_Fingers_medium.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/E_Minor_Neck_Pick_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="submitSet(7)">Next Set</button>
-  </div>
-
-  <div id="set8" class="test-set">
     <h1>Chord G - Rate Brightness</h1>
     <p>Listen to each clip and rate its brightness from 0 (least bright) to 100 (brightest).</p>
     <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sample 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/G_Bridge_fingers_Soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/G_Bridge_pick_intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/G_Neck_fingers_soft.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sample 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/G_Neck_pick_intense.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="submitSet(8)">Next Set</button>
-  </div>
-
-  <div id="set9" class="test-set">
-    <h1>Sequence Test - Rate Brightness</h1>
-    <p>Listen to these musical sequences and rate their brightness from 0 (least bright) to 100 (brightest).</p>
-    <div class="sample-group">
-      <div class="samples-container">
-        <div class="sample">
-          <p>Sequence 1:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/Guitar_AJ_Sequence_0.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="1">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sequence 2:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/Guitar_J35_Sequence_0.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="2">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sequence 3:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/Guitar_J50_Sequence_0.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="3">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
-        <div class="sample">
-          <p>Sequence 4:</p>
-          <button class="play-button">Play</button>
-          <audio src="-14_LUFS/Guitar_OMC_Sequence_0.mp3"></audio>
-          <div class="brightness-control">
-            <div class="slider-container">
-              <input type="range" min="0" max="100" value="50" class="brightness-slider" data-index="4">
-              <span class="brightness-value">50</span>
-            </div>
-            <div class="slider-labels">
-              <span>Less Bright</span>
-              <span>Brighter</span>
-            </div>
-          </div>
-        </div>
+      <div class="samples-container" id="g-samples">
+        <!-- Samples will be inserted here by script.js -->
       </div>
     </div>
     <button onclick="submitFinal()">Submit All Rankings</button>
@@ -823,7 +253,6 @@
     <div class="loading-spinner"></div>
     <div class="loading-text">Submitting your responses...</div>
   </div>
-
   <script src="google-sheets-config.js"></script>
   <script src="script.js"></script>
 </body>
